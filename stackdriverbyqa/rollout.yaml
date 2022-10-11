@@ -30,7 +30,7 @@ spec:
         - pause: { duration: 30s }
         - analysis:
             templates:
-              - templateName: sj-analysis
+              - templateName: logg11
             args:
               - name: canary-hash
                 valueFrom:
