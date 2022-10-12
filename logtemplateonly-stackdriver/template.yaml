@@ -10,14 +10,14 @@ spec:
           profile: "opsmx-profile"
           gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
           user: admin
-          application: testfinal
+          application: argo11
           baselineStartTime: "2022-08-20T13:15:00Z"
           lifetimeMinutes: 6
           threshold: 
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: stackdriver
+          - logTemplateName: logg11
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
