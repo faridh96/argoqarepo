@@ -10,7 +10,7 @@ spec:
           profile: "opsmx-profile"
           gateUrl: https://testargo.isd.ninja-test.opsmx.net/
           user: admin
-          application: argo11
+          application: argonew11
           baselineStartTime: "2022-08-20T13:15:00Z"
           lifetimeMinutes: 6
           threshold: 
