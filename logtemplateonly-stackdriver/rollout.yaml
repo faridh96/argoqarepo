@@ -30,7 +30,7 @@ spec:
                 requiredForCompletion: true
                 templateName: testapp
             templates:
-              - name: baseline
+              - name: logg11
                 specRef: stable
               - name: canary
                 specRef: canary
