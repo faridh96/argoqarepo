@@ -8,9 +8,9 @@ spec:
       provider:
         opsmx:
           profile: "opsmx-profile"
-          gateUrl: https://testargo.isd.ninja-test.opsmx.net/
+          gateUrl: https://isdargo-test.ninja-test.opsmx.net/
           user: admin
-          application: argonew11
+          application: argotest13
           baselineStartTime: "2022-08-20T13:15:00Z"
           canaryStartTime: "2022-08-20T13:15:00Z"
           lifetimeMinutes: 6
@@ -18,7 +18,7 @@ spec:
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: logg11
+          - logTemplateName: log13new
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
