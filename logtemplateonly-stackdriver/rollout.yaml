@@ -26,11 +26,11 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : argotest13
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: log13new
             templates:
-              - name: logg11
+              - name: log13new
                 specRef: stable
               - name: canary
                 specRef: canary
