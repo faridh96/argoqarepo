@@ -26,9 +26,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : argotest13
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: log13new
             templates:
               - name: log13new
                 specRef: stable
@@ -38,9 +38,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : argotest13
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: log13new
             templates:
               - name: baseline
                 specRef: stable
