@@ -26,9 +26,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : newrelic13
+              - name : testapp
                 requiredForCompletion: true
-                templateName: metric133
+                templateName: testapp
             templates:
               - name: metric133
                 specRef: stable
@@ -38,9 +38,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : newrelic13
+              - name : testapp
                 requiredForCompletion: true
-                templateName: metric133
+                templateName: testapp
             templates:
               - name: metric133
                 specRef: stable
