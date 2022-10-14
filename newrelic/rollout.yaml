@@ -7,15 +7,15 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: testapp
+      app: argotest
   template:
     metadata:   
       labels:
-        app: testapp
+        app: argotest
     spec:
       containers:
         - name: rollouts-demo-exp
-          image: docker.io/opsmxdev/issuegen:v3.0.7
+          image: docker.io/opsmxdev/issuegen:v3.0.8
           imagePullPolicy: Always
           ports:
             - containerPort: 8088
@@ -28,9 +28,9 @@ spec:
             analyses:
               - name : testapp
                 requiredForCompletion: true
-                templateName: metric133
+                templateName: testapp
             templates:
-              - name: metric133
+              - name: baseline
                 specRef: stable
               - name: canary
                 specRef: canary
@@ -40,9 +40,9 @@ spec:
             analyses:
               - name : testapp
                 requiredForCompletion: true
-                templateName: metric133
+                templateName: testapp
             templates:
-              - name: metric133
+              - name: baseline
                 specRef: stable
               - name: canary
                 specRef: canary
