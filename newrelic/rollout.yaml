@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo-exp
-          image: docker.io/opsmxdev/issuegen:v3.0.5
+          image: docker.io/opsmxdev/issuegen:v3.0.7
           imagePullPolicy: Always
           ports:
             - containerPort: 8088
@@ -26,9 +26,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : newrelic13
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: metric133
             templates:
               - name: metric133
                 specRef: stable
@@ -38,9 +38,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : newrelic13
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: metric133
             templates:
               - name: metric133
                 specRef: stable
