@@ -42,7 +42,7 @@ spec:
                 requiredForCompletion: true
                 templateName: metric25
             templates:
-              - name: baseline
+              - name: metric25
                 specRef: stable
               - name: canary
                 specRef: canary
