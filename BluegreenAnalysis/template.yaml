@@ -11,8 +11,8 @@ spec:
       count: 1
       provider:
         opsmx:
-          gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
-          application: bluegreen
+          gateUrl: https://argoautopilot-uat.ninja-test.opsmx.net
+          application: bluegreencd
           user: admin
           lifetimeMinutes: 3
           threshold:
@@ -20,7 +20,7 @@ spec:
             marginal: 60
           services:
           - serviceName: service1
-            metricTemplateName: prometheusbluegreenanalysis
+            metricTemplateName: metric25
             metricTemplateVersion: "v2.0"
             metricScopeVariables: "namespace_key,pod_key"
             baselineMetricScope: "argocd,.*{{args.baseline-hash}}.*" 
