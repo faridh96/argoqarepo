@@ -7,11 +7,11 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: argotest
+      app: newrelicapp
   template:
     metadata:   
       labels:
-        app: argotest
+        app: newrelicapp
     spec:
       containers:
         - name: rollouts-demo-exp
@@ -26,9 +26,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : metric25
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: metric25
             templates:
               - name: baseline
                 specRef: stable
@@ -38,9 +38,9 @@ spec:
         - pause: { duration: 45s }
         - experiment:
             analyses:
-              - name : testapp
+              - name : metric25
                 requiredForCompletion: true
-                templateName: testapp
+                templateName: metric25
             templates:
               - name: baseline
                 specRef: stable
