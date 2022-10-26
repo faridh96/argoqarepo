@@ -30,7 +30,7 @@ spec:
                 requiredForCompletion: true
                 templateName: testapp
             templates:
-              - name: baseline
+              - name: logg26
                 specRef: stable
               - name: canary
                 specRef: canary
@@ -42,7 +42,7 @@ spec:
                 requiredForCompletion: true
                 templateName: testapp
             templates:
-              - name: baseline
+              - name: logg262
                 specRef: stable
               - name: canary
                 specRef: canary
