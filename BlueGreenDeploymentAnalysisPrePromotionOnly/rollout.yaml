@@ -28,7 +28,7 @@ spec:
       autoPromotionSeconds: 30
       prePromotionAnalysis:
         templates:
-        - templateName: testapps
+        - templateName: isd-analysis-bg-v1
         args:
         - name: baseline-hash
           valueFrom:
