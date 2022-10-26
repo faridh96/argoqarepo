@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: rollouts-demo-exp
-          image: docker.io/opsmxdev/issuegen:v3.0.7
+          image: docker.io/opsmxdev/issuegen:v3.0.8
           imagePullPolicy: Always
           ports:
             - containerPort: 8088
@@ -30,7 +30,7 @@ spec:
                 requiredForCompletion: true
                 templateName: testapp
             templates:
-              - name: logg26
+              - name: baseline
                 specRef: stable
               - name: canary
                 specRef: canary
@@ -42,7 +42,7 @@ spec:
                 requiredForCompletion: true
                 templateName: testapp
             templates:
-              - name: logg262
+              - name: baseline
                 specRef: stable
               - name: canary
                 specRef: canary
