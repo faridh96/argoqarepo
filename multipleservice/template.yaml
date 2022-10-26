@@ -8,16 +8,16 @@ spec:
       provider:
         opsmx:
           profile: opsmx-profile
-          gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
+          gateUrl: https://argoisdfull-uat.ninja-test.opsmx.net/
           user: admin
-          application: multipleservicetest
+          application: multipleservicerollout
           baselineStartTime: "2022-08-20T13:15:00Z"
           lifetimeMinutes: "6"
           threshold: 
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: stackdriver
+          - logTemplateName: logg26
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
