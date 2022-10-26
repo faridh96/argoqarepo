@@ -8,7 +8,7 @@ spec:
       provider:
         opsmx:
           profile: "opsmx-profile"
-          gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
+          gateUrl: https://argoisdfull-uat.ninja-test.opsmx.net/
           user: admin
           application: multiservice
           baselineStartTime: "2021-11-03T11:29:46.915Z"
@@ -18,22 +18,22 @@ spec:
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: elk1
+          - logTemplateName: logg26
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
             serviceName: "Service1"
-          - logTemplateName: elk2
+          - logTemplateName: logg266
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
             serviceName: "Service2"
-          - metricTemplateName: dd1
+          - metricTemplateName: metric28
             metricScopeVariables: "variable1"
             baselineMetricScope: "service:baseapp"
             canaryMetricScope: "service:canaryapp"
             serviceName: "Service1"
-          - metricTemplateName: dd2
+          - metricTemplateName: metric282
             metricScopeVariables: "variable1"
             baselineMetricScope: "service:baseapp"
             canaryMetricScope: "service:canaryapp"
