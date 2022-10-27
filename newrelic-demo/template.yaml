@@ -12,19 +12,19 @@ spec:
       initialDelay: 10s
       provider:
         opsmx:
-          gateUrl: https://isd-dev.argo-dev.opsmx.net/
-          application: demo-test-newrelic
+          gateUrl: https://argoisdfull-uat.ninja-test.opsmx.net/
+          application: newrelicapp
           user: admin
           lifetimeHours: "0.05"
           threshold:
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: logverification
+          - logTemplateName: logg26
             logScopeVariables: "kubernetes.pod_name"
             baselineLogScope: ".*{{args.baseline-hash}}.*"
             canaryLogScope: ".*{{args.canary-hash}}.*"
-            metricTemplateName: nranalysisv4
+            metricTemplateName: metic282
             metricScopeVariables: "app_key,pod_key"
             baselineMetricScope: "demo-test,{{args.baseline-hash}}"
             canaryMetricScope: "demo-test,{{args.canary-hash}}"
