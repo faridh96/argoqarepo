@@ -28,7 +28,7 @@ spec:
             analyses:
               - name : testapp
                 requiredForCompletion: true
-                templateName: testapp
+                templateName:  splunklog28
             templates:
               - name: baseline
                 specRef: stable
@@ -40,7 +40,7 @@ spec:
             analyses:
               - name : testapp
                 requiredForCompletion: true
-                templateName: testapp
+                templateName:  splunklog28
             templates:
               - name: baseline
                 specRef: stable
