@@ -11,7 +11,7 @@ spec:
         opsmx:
           profile: "opsmx-profile"
           gateUrl: https://argofull.ninja-test.opsmx.net/
-          application: elastic1
+          application: test16
           baselineStartTime: "2021-11-03T11:29:46.915Z"
           canaryStartTime: "2021-11-03T11:29:46.915Z" 
           user: admin
