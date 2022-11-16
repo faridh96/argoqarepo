@@ -10,7 +10,7 @@ spec:
       provider:
         opsmx:
           profile: "opsmx-profile"
-          gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
+          gateUrl: https://argofull.ninja-test.opsmx.net/
           application: elastic1
           baselineStartTime: "2021-11-03T11:29:46.915Z"
           canaryStartTime: "2021-11-03T11:29:46.915Z" 
@@ -20,7 +20,7 @@ spec:
             pass: 80
             marginal: 60
           services:
-          - logTemplateName: oct6logtemp
+          - logTemplateName: log-16 
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
